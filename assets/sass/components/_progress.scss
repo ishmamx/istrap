@@ -1,0 +1,22 @@
+.progress {
+  height: 17px;
+  border-radius: 4px;
+  background-color: $base-color4;
+  overflow: hidden;
+}
+
+.with-lables.progress .progress-bar {
+  border-radius: initial;
+}
+
+.progress-bar {
+  background-color: $accent-color1;
+  position: relative;
+}
+
+
+.progress span {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+}

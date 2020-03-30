@@ -1,0 +1,41 @@
+.pagination li {
+  font-size: 16px
+}
+.page-item .page-link {
+  color: $accent-color1;
+}
+.page-link {
+  color: $base-color2;
+  border-color: $base-color4;
+  background-color: $main-color;
+}
+
+.page-item.disabled .page-link {
+  background-color: $main-color;
+  border-color: $base-color4;
+}
+
+.page-link:focus,
+.page-link:hover {
+  color: $accent-color1;
+  text-decoration: none;
+  background-color: $base-color5;
+  border-color: $base-color4;
+}
+
+.page-item.active .page-link {
+  background-color: $accent-color1;
+  border-color: $accent-color1;
+}
+
+.pagination i {
+  line-height: 1em;
+  font-size: 18px;
+  position: relative;
+  margin-top: -5px;
+  top: 4px;
+}
+
+.page-link:focus {
+  box-shadow: none;
+}

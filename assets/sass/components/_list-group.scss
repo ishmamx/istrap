@@ -1,0 +1,117 @@
+.list-group-item {
+  font-size: 16px;
+  line-height: 1.6em;
+  border-color: $base-color4;
+  color: $base-color1;
+  padding: 12px 20px;
+}
+
+.list-group-item.active,
+.list-group-item-action.active:hover {
+  border-color: rgba($accent-color1, 0.1);
+  background-color: rgba($accent-color1, 0.1);
+  color: $accent-color1;
+}
+
+.list-group-item.disabled,
+.list-group-item:disabled {
+  color: $base-color3;
+}
+
+.list-group-item-action:focus,
+.list-group-item-action:hover {
+  color: $accent-color1;
+  background-color: rgba($accent-color1, 0.1);
+  border-color: rgba($accent-color1, 0.1);
+}
+
+.list-group-flush .list-group-item {
+  // border: none;
+  // padding: 10px 0px;
+}
+
+.list-group-item-primary {
+  background-color: $accent-color1;
+  color: #fff;
+  border: none;
+  letter-spacing: 0.17px;
+}
+
+.list-group-item-secondary {
+  background-color: $accent-color2;
+  color: #fff;
+  border: none;
+  letter-spacing: 0.17px;
+}
+
+.list-group-item-success {
+  background-color: $accent-color4;
+  color: #fff;
+  border: none;
+  letter-spacing: 0.17px;
+}
+
+.list-group-item-danger {
+  background-color: $accent-color5;
+  color: #fff;
+  border: none;
+  letter-spacing: 0.17px;
+}
+
+.list-group-item-warning {
+  background-color: $accent-color6;
+  color: #fff;
+  border: none;
+  letter-spacing: 0.17px;
+}
+
+.list-group-item-info {
+  background-color: $accent-color3;
+  color: #fff;
+  border: none;
+  letter-spacing: 0.17px;
+}
+
+.list-group-item-light {
+  background-color: $base-color5;
+  color: $base-color2;
+  border: none;
+  letter-spacing: 0.17px;
+}
+
+.list-group-item-dark {
+  background-color: $base-color1;
+  color: #fff;
+  border: none;
+  letter-spacing: 0.17px;
+}
+
+.list-unstyled {
+  list-style: disc;
+  padding-left: 17px;
+  margin-bottom: 20px;
+
+  li {
+    font-size: 16px;
+    line-height: 1.6em;
+    margin-bottom: 3px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  ul {
+    margin-top: 3px;
+    list-style: circle;
+  }
+}
+
+.list-inline {
+  margin-bottom: 20px;
+
+  li {
+    font-size: 16px;
+    line-height: 1.6em;
+  }
+}

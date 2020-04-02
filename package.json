@@ -1,0 +1,34 @@
+{
+  "name": "istrap",
+  "version": "1.0.1",
+  "description": "iOS design system blends in with Bootstrap",
+  "main": "assets/js/istrap.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yookits/istrap.git"
+  },
+  "keywords": [
+    "admin",
+    "dashboard",
+    "framework",
+    "template",
+    "css",
+    "sass",
+    "responsive",
+    "control-panel",
+    "admin-dashboard",
+    "dashboard-template",
+    "bootstrap-admin",
+    "bootstrap-dashboard",
+    "theme"
+  ],
+  "author": "YooKits",
+  "license": "CC by 4.0",
+  "bugs": {
+    "url": "https://github.com/yookits/istrap/issues"
+  },
+  "homepage": "https://github.com/yookits/istrap#readme"
+}

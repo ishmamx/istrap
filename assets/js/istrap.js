@@ -10,7 +10,7 @@
     $(window).trigger("resize");
   });
 
-  $(document).on("ready", function() {
+  $(document).ready(function() {
     $(window).trigger("resize");
     mainMenu();
     mobileMenu();
@@ -41,54 +41,54 @@
 
   /* Main Menu */
   function mainMenu() {
-    $(".tb-nav-toggle").on("click", function() {
-      $(this).siblings(".tb-nav").slideToggle();
-      $(this).toggleClass("tb-active");
+    $(".yoo-nav-toggle").on("click", function() {
+      $(this).siblings(".yoo-nav").slideToggle();
+      $(this).toggleClass("yoo-active");
     });
-    $(".tb-has-children").append('<span class="tb-dropdown-btn"></span>');
-    $(".tb-dropdown-btn").on("click", function() {
-      $(this).siblings("ul, .tb-megamenu-in, .tb-vertical-megamenu-in").slideToggle("slow");
-      $(this).toggleClass("tb-active");
+    $(".yoo-has-children").append('<span class="yoo-dropdown-btn"></span>');
+    $(".yoo-dropdown-btn").on("click", function() {
+      $(this).siblings("ul, .yoo-megamenu-in, .yoo-vertical-megamenu-in").slideToggle("slow");
+      $(this).toggleClass("yoo-active");
     });
   }
   /* Mobile Menu */
   function mobileMenu() {
     if ($(window).width() <= 991) {
-      $(".tb-header").addClass("tb-mobile-header");
-      $(".tb-nav").addClass("tb-mobile-nav").removeClass("tb-desktop-nav");
+      $(".yoo-header").addClass("yoo-mobile-header");
+      $(".yoo-nav").addClass("yoo-mobile-nav").removeClass("yoo-desktop-nav");
     } else {
-      $(".tb-header").removeClass("tb-mobile-header");
-      $(".tb-nav").addClass("tb-desktop-nav").removeClass("tb-mobile-nav");
+      $(".yoo-header").removeClass("yoo-mobile-header");
+      $(".yoo-nav").addClass("yoo-desktop-nav").removeClass("yoo-mobile-nav");
     }
   }
   /* Sticky Header */
   function stickyHeader() {
     var scroll = $(window).scrollTop();
     if (scroll >= 10) {
-      $(".tb-header").addClass("tb-sticky-active");
+      $(".yoo-header").addClass("yoo-sticky-active");
     } else {
-      $(".tb-header").removeClass("tb-sticky-active");
+      $(".yoo-header").removeClass("yoo-sticky-active");
     }
   }
   /* Sidebar Header */
   function sideBarHeader() {
-    $(".tb-sidebar-has-children").append('<span class="tb-dropdown-arrow"></span>');
-    $('.tb-sidebar-nav-dropdown .active').parents('.tb-sidebar-nav-dropdown').show();
-    $('.tb-sidebar-nav-dropdown .active').parents('.tb-sidebar-nav-dropdown').siblings('.tb-dropdown-arrow').addClass('active');
-    $(".tb-sidebar-has-children>a").removeAttr("href").on("click", function() {
-      $(this).siblings(".tb-sidebar-nav-dropdown").slideToggle();
-      $(this).siblings(".tb-dropdown-arrow").toggleClass("active");
+    $(".yoo-sidebar-has-children").append('<span class="yoo-dropdown-arrow"></span>');
+    $('.yoo-sidebar-nav-dropdown .active').parents('.yoo-sidebar-nav-dropdown').show();
+    $('.yoo-sidebar-nav-dropdown .active').parents('.yoo-sidebar-nav-dropdown').siblings('.yoo-dropdown-arrow').addClass('active');
+    $(".yoo-sidebar-has-children>a").removeAttr("href").on("click", function() {
+      $(this).siblings(".yoo-sidebar-nav-dropdown").slideToggle();
+      $(this).siblings(".yoo-dropdown-arrow").toggleClass("active");
     });
-    $(".tb-sidebarheader-toggle").on("click", function() {
-      $("body").toggleClass("tb-sidebar-active");
+    $(".yoo-sidebarheader-toggle").on("click", function() {
+      $("body").toggleClass("yoo-sidebar-active");
     });
     // Hover To Class Toggle
-    $(".tb-sidebarheader").hover(
+    $(".yoo-sidebarheader").hover(
       function() {
-        $("body").addClass("tb-sidebar-hover-active");
+        $("body").addClass("yoo-sidebar-hover-active");
       },
       function() {
-        $("body").removeClass("tb-sidebar-hover-active");
+        $("body").removeClass("yoo-sidebar-hover-active");
       }
     );
   }
@@ -118,26 +118,26 @@
   --------------------------------------------------------------*/
   function customToggleInt() {
     // Custome Toggle Button
-    $(".tb-toggle-btn").on("click", function() {
-      $(this).toggleClass("active").siblings(".tb-dropdown").toggleClass("active");
-      $(this).parents("li").siblings().find(".tb-dropdown, .tb-toggle-btn").removeClass("active");
-      $(this).parents('.tb-toggle-body').siblings().find('.tb-dropdown, .tb-toggle-btn').removeClass('active');
+    $(".yoo-toggle-btn").on("click", function() {
+      $(this).toggleClass("active").siblings(".yoo-dropdown").toggleClass("active");
+      $(this).parents("li").siblings().find(".yoo-dropdown, .yoo-toggle-btn").removeClass("active");
+      $(this).parents('.yoo-toggle-body').siblings().find('.yoo-dropdown, .yoo-toggle-btn').removeClass('active');
     });
-    $('.tb-toggle-cross-btn').on('click', function() {
-      $(this).parents('.tb-toggle-body').find('.tb-toggle-btn, .tb-dropdown').removeClass('active');
+    $('.yoo-toggle-cross-btn').on('click', function() {
+      $(this).parents('.yoo-toggle-body').find('.yoo-toggle-btn, .yoo-dropdown').removeClass('active');
     })
     $(document).on("click", function() {
-      $(".tb-dropdown").removeClass("active").siblings().removeClass("active");
+      $(".yoo-dropdown").removeClass("active").siblings().removeClass("active");
     });
-    $(".tb-dropdown, .tb-toggle-btn").on("click", function(e) {
+    $(".yoo-dropdown, .yoo-toggle-btn").on("click", function(e) {
       e.stopPropagation();
     });
 
-    $('.tb-toggle-cross').on('click', function() {
-      $(this).parents('.tb-dropdown').removeClass('active').siblings('.tb-toggle-btn').removeClass('active');
+    $('.yoo-toggle-cross').on('click', function() {
+      $(this).parents('.yoo-dropdown').removeClass('active').siblings('.yoo-toggle-btn').removeClass('active');
     })
     // Star Toggle Btn
-    $('.tb-get-star, .tb-mobile-toggle-btn').on('click', function() {
+    $('.yoo-get-star, .yoo-mobile-toggle-btn').on('click', function() {
       $(this).toggleClass('active');
     })
   }
@@ -162,7 +162,7 @@
     5. sticky footer
   --------------------------------------------------------------*/
   function stickyFooter() {
-    $('.tb-sticky-footer').parents('.tb-content').append('<div class="tb-height-b40 tb-height-lg-b0"></div>');
+    $('.yoo-sticky-footer').parents('.yoo-content').append('<div class="yoo-height-b40 yoo-height-lg-b0"></div>');
   }
 
 

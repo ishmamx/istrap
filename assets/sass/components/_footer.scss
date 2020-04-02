@@ -1,7 +1,7 @@
 /*========== Start Footer  ==========*/
-.tb-footer {
-  &.tb-style1 {
-    .tb-footer-content {
+.yoo-footer {
+  &.yoo-style1 {
+    .yoo-footer-content {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -11,7 +11,7 @@
   }
 }
 
-.tb-footer-nav {
+.yoo-footer-nav {
   li:not(:last-child) {
     margin-right: 30px;
   }
@@ -26,7 +26,7 @@
   }
 }
 
-.tb-copyride {
+.yoo-copyride {
   font-size: 13px;
   color: $base-color2;
   line-height: 1.6em;
@@ -39,7 +39,7 @@
   }
 }
 
-.tb-sticky-footer {
+.yoo-sticky-footer {
     position: fixed;
     width: 100%;
     left: 0;
@@ -61,18 +61,18 @@
     }
 }
 @media screen and (max-width: 1199px) {
-.tb-sticky-footer {
+.yoo-sticky-footer {
     padding-left: 0;
 }
 }
 
 @media screen and (max-width: 991px) {
-  .tb-footer.tb-style1 .tb-footer-content {
+  .yoo-footer.yoo-style1 .yoo-footer-content {
     flex-direction: column;
     text-align: center;
   }
 
-  .tb-sticky-footer {
+  .yoo-sticky-footer {
     position: initial;
   }
 }

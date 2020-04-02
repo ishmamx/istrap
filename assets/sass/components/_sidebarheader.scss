@@ -1,4 +1,4 @@
-.tb-sidebarheader {
+.yoo-sidebarheader {
   width: 370px;
   background-color: $main-color;
   height: 100vh;
@@ -11,33 +11,33 @@
   z-index: 50;
   transition: all 0.3s ease;
 
-  .tb-sidebarheader-in {
+  .yoo-sidebarheader-in {
     height: 100vh;
     height: 100%;
     background-color: #f2f2f6;
   }
 
-  &.tb-white-bg {
-    .tb-sidebarheader-in {
+  &.yoo-white-bg {
+    .yoo-sidebarheader-in {
       background-color: $main-color;
     }
   }
 }
 
-.tb-sidebar-link-text,
-.tb-sidebar-nav-list .tb-nav-label,
-.tb-dropdown-arrow,
-.tb-sidebar-link-icon {
+.yoo-sidebar-link-text,
+.yoo-sidebar-nav-list .yoo-nav-label,
+.yoo-dropdown-arrow,
+.yoo-sidebar-link-icon {
   transition: all 0.3s ease;
 }
 
-.tb-sidebar-nav {
+.yoo-sidebar-nav {
   padding: 17px 10px;
   overflow: hidden;
   width: 370px;
 }
 
-.tb-sidebar-nav-list {
+.yoo-sidebar-nav-list {
   color: $base-color1;
   margin-bottom: 10px;
 
@@ -69,17 +69,17 @@
       background-color: $base-color5;
     }
 
-    .tb-sidebar-link-title {
+    .yoo-sidebar-link-title {
       display: flex;
       align-items: center;
     }
 
-    .tb-sidebar-link-text {
+    .yoo-sidebar-link-text {
       line-height: 1.25em;
     }
   }
 
-  .tb-sidebar-link-icon {
+  .yoo-sidebar-link-icon {
     color: rgba($base-color, 0.54);
     font-size: 22px;
     margin-right: 15px;
@@ -99,7 +99,7 @@
     }
   }
 
-  .tb-nav-label {
+  .yoo-nav-label {
     font-size: 10px;
     line-height: 1.5em;
     padding: 0 4px;
@@ -126,12 +126,12 @@
       }
     }
 
-    &.tb-sidebar-has-children {
+    &.yoo-sidebar-has-children {
       &>a {
         padding-right: 35px;
       }
 
-      .tb-dropdown-arrow {
+      .yoo-dropdown-arrow {
         height: 7px;
         width: 7px;
         position: absolute;
@@ -152,7 +152,7 @@
         }
       }
 
-      .tb-sidebar-nav-dropdown {
+      .yoo-sidebar-nav-dropdown {
         &>li {
           a {
             padding-left: 58px;
@@ -163,14 +163,14 @@
           }
         }
 
-        .tb-sidebar-nav-dropdown {
+        .yoo-sidebar-nav-dropdown {
           &>li {
             a {
               padding-left: 80px;
             }
           }
 
-          .tb-sidebar-nav-dropdown {
+          .yoo-sidebar-nav-dropdown {
             &>li {
               a {
                 padding-left: 95px;
@@ -179,19 +179,19 @@
           }
         }
 
-        .tb-sidebar-link-icon {
+        .yoo-sidebar-link-icon {
           font-size: 16px;
         }
       }
     }
   }
 
-  .tb-sidebar-nav-dropdown {
+  .yoo-sidebar-nav-dropdown {
     display: none;
   }
 }
 
-.tb-sidebar-nav-title {
+.yoo-sidebar-nav-title {
   text-transform: uppercase;
   padding: 5px 30px;
   color: $base-color3;
@@ -202,11 +202,11 @@
   width: 268px;
 }
 
-.tb-sidebar-nav-title-text {
+.yoo-sidebar-nav-title-text {
   transition: all 0.3s ease;
 }
 
-.tb-sidebar-nav-title-dotline {
+.yoo-sidebar-nav-title-dotline {
   position: absolute;
   height: 100%;
   width: 80px;
@@ -221,15 +221,15 @@
   transition: all 0.3s ease;
 }
 
-.tb-sidebar-active .tb-sidebar-nav-title-dotline {
+.yoo-sidebar-active .yoo-sidebar-nav-title-dotline {
   opacity: 1;
 }
 
-.tb-sidebar-active.tb-sidebar-hover-active .tb-sidebar-nav-title-dotline {
+.yoo-sidebar-active.yoo-sidebar-hover-active .yoo-sidebar-nav-title-dotline {
   opacity: 0;
 }
 
-.tb-sidebar-nav-dot {
+.yoo-sidebar-nav-dot {
   display: flex;
   position: absolute;
   top: 0;
@@ -243,7 +243,7 @@
 }
 
 // Toggle Button
-.tb-sidebarheader-toggle {
+.yoo-sidebarheader-toggle {
   display: flex;
   align-self: center;
   flex-direction: column;
@@ -264,12 +264,12 @@
     width: 100%;
     background: rgba(255, 255, 255, 0.38);
 
-    &.tb-button-bar2 {
+    &.yoo-button-bar2 {
       width: 65.5%;
       transition: all 200ms ease-in-out;
     }
 
-    &.tb-button-bar3 {
+    &.yoo-button-bar3 {
       width: 35%;
       transition: all 400ms ease-in-out;
     }
@@ -280,15 +280,15 @@
       width: 100%;
     }
 
-    .tb-button-bar1 {
+    .yoo-button-bar1 {
       animation: burger-hover 1s infinite ease-in-out alternate;
     }
 
-    .tb-button-bar2 {
+    .yoo-button-bar2 {
       animation: burger-hover 1s infinite ease-in-out alternate forwards 200ms;
     }
 
-    .tb-button-bar3 {
+    .yoo-button-bar3 {
       animation: burger-hover 1s infinite ease-in-out alternate forwards 400ms;
     }
   }
@@ -309,77 +309,77 @@
 }
 
 /* Start Sidebar heading Toggle Function */
-.tb-sidebar-active {
-  .tb-content.tb-style1 {
+.yoo-sidebar-active {
+  .yoo-content.yoo-style1 {
     padding-left: 80px;
   }
 
-  .tb-main-header-left {
+  .yoo-main-header-left {
     margin-left: -290px;
   }
 
-  .tb-sidebarheader-toggle {
+  .yoo-sidebarheader-toggle {
     left: 24px;
   }
 
-  .tb-sidebarheader {
+  .yoo-sidebarheader {
     width: 80px;
 
-    .tb-sidebar-link-icon {
+    .yoo-sidebar-link-icon {
       margin-right: 0;
     }
 
-    .tb-sidebar-nav-dropdown,
-    .tb-nav-label,
-    .tb-sidebar-link-text,
-    .tb-sidebar-nav-title-text,
-    .tb-site-branding {
+    .yoo-sidebar-nav-dropdown,
+    .yoo-nav-label,
+    .yoo-sidebar-link-text,
+    .yoo-sidebar-nav-title-text,
+    .yoo-site-branding {
       opacity: 0;
       visibility: hidden;
     }
 
-    .tb-sidebar-nav-dot {
+    .yoo-sidebar-nav-dot {
       opacity: 1;
       visibility: visible;
     }
 
-    .tb-sidebar-nav-dropdown li {
+    .yoo-sidebar-nav-dropdown li {
       display: none;
     }
   }
 
   /* Hover */
-  &.tb-sidebar-hover-active {
-    .tb-sidebarheader {
+  &.yoo-sidebar-hover-active {
+    .yoo-sidebarheader {
       width: 370px;
     }
 
-    .tb-sidebar-nav-dropdown,
-    .tb-nav-label,
-    .tb-sidebar-link-text,
-    .tb-sidebar-nav-title-text,
-    .tb-site-branding {
+    .yoo-sidebar-nav-dropdown,
+    .yoo-nav-label,
+    .yoo-sidebar-link-text,
+    .yoo-sidebar-nav-title-text,
+    .yoo-site-branding {
       opacity: 1;
       visibility: visible;
     }
 
-    .tb-sidebar-nav-dot {
+    .yoo-sidebar-nav-dot {
       opacity: 0;
       visibility: hidden;
     }
 
-    .tb-sidebar-link-icon {
+    .yoo-sidebar-link-icon {
       margin-right: 15px;
     }
 
-    .tb-sidebar-nav-dropdown li {
+    .yoo-sidebar-nav-dropdown li {
       display: block;
     }
   }
 }
 
 /* End Sidebar heading Toggle Function */
-.tb-sidebar-nav-list {
+.yoo-sidebar-nav-list {
   li {
     padding-bottom: 5px;
 
@@ -389,72 +389,72 @@
   }
 }
 
-.tb-sidebar-nav-list .tb-sidebar-nav-dropdown {
+.yoo-sidebar-nav-list .yoo-sidebar-nav-dropdown {
   padding-top: 5px;
 }
 
 @media screen and (max-width: 1199px) {
-  .tb-sidebarheader {
+  .yoo-sidebarheader {
     left: -370px;
   }
 
-  .tb-content.tb-style1 {
+  .yoo-content.yoo-style1 {
     padding-left: 0;
   }
 
-  .tb-sidebarheader-toggle {
+  .yoo-sidebarheader-toggle {
     left: 21px;
   }
 
-  .tb-main-header-left {
+  .yoo-main-header-left {
     margin-left: -308px;
   }
 
-  .tb-sidebar-active {
-    .tb-content.tb-style1 {
+  .yoo-sidebar-active {
+    .yoo-content.yoo-style1 {
       padding-left: 0px;
     }
 
-    .tb-sidebarheader {
+    .yoo-sidebarheader {
       width: 370px;
       left: 0;
       background-color: $main-color;
 
-      .tb-sidebar-link-icon {
+      .yoo-sidebar-link-icon {
         margin-right: 15px;
       }
 
-      .tb-sidebar-nav-dropdown,
-      .tb-nav-label,
-      .tb-sidebar-link-text,
-      .tb-sidebar-nav-title-text,
-      .tb-site-branding {
+      .yoo-sidebar-nav-dropdown,
+      .yoo-nav-label,
+      .yoo-sidebar-link-text,
+      .yoo-sidebar-nav-title-text,
+      .yoo-site-branding {
         opacity: 1;
         visibility: visible;
       }
 
-      .tb-sidebar-nav-dot {
+      .yoo-sidebar-nav-dot {
         opacity: 0;
         visibility: hidden;
       }
     }
 
-    .tb-sidebarheader-toggle {
+    .yoo-sidebarheader-toggle {
       left: 322px;
     }
 
-    .tb-main-header-left {
+    .yoo-main-header-left {
       margin-left: 0px;
     }
   }
 
-  .tb-sidebar-active.tb-sidebar-hover-active .tb-sidebarheader {
+  .yoo-sidebar-active.yoo-sidebar-hover-active .yoo-sidebarheader {
     width: 100%;
   }
 }
 
 @media screen and (max-width: 575px) {
-  .tb-sidebar-active .tb-main-header-left {
+  .yoo-sidebar-active .yoo-main-header-left {
     margin-left: -208px;
     left: 208px;
     position: relative;

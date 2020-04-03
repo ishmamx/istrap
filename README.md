@@ -7,7 +7,7 @@ Fan of Bootstrap but bored of its UI? iDashboard is the answer for you! It’s t
 
 Looking more epic demos & tons of features? Go Pro!
 ------------------------------
-Pro version comes with even more demos and features. You can literally build any web app ever. Just take a look from here: https://yookits.com/demo/materialx-pro/
+Pro version comes with even more demos and features. You can literally build any web app ever. Just take a look from here: https://yookits.com/product/idashboard-ios-admin-dashboard-template/
 
 !["iDashboardPro Preview"](https://github.com/yookits/istrap/blob/master/assets/img/idashboard.jpg?raw=true "iDashboardPro Preview")
 

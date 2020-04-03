@@ -9,7 +9,7 @@ Looking more epic demos & tons of features? Go Pro!
 ------------------------------
 Pro version comes with even more demos and features. You can literally build any web app ever. Just take a look from here: https://yookits.com/demo/materialx-pro/
 
-!["iDashboardPro Preview"](https://github.com/yookits/materialx/blob/master/assets/img/idashboard.jpg?raw=true "iDashboardPro Preview")
+!["iDashboardPro Preview"](https://github.com/yookits/istrap/blob/master/assets/img/idashboard.jpg?raw=true "iDashboardPro Preview")
 
 Installation
 ------------
